@@ -54,6 +54,7 @@ function test_trouver_plus_proche_de_zero() {
     assert(trouver_plus_proche_de_zero([-7, 12, 67, 98, -8, 41]) == -7);
     assert(trouver_plus_proche_de_zero([-78, -93, -109, 24, -132]) == 24);
     assert(trouver_plus_proche_de_zero([-78, -93, -109, -2, -132]) == -2);
+    assert(trouver_plus_proche_de_zero([7, -5]) == -5);
     echo " -> fonction trouver_plus_proche_de_zero: OK\n";
 }
 

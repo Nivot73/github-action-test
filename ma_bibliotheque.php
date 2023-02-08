@@ -1,6 +1,5 @@
 <?php
 // Fonction pour trouver la valeur minimale d'un tableau
-// TODO: Corriger l'erreur dans la fonction
 function trouver_min($tableau) {
     $min = $tableau[0];
 
@@ -28,8 +27,23 @@ function trouver_max($tableau) {
 
 // Fonction pour trouver la valeur la plus proche de zéro
 function trouver_plus_proche_de_zero($tableau) {
-    // TODO: Écrire le corps de la fonction
+    $nearZero = $tableau[0];//7
+    echo "coucou";
+    foreach ($tableau as $element) {
+        if ($element >= 0){
+            if ($nearZero > $element) {
+                $nearZero = $element;
+            }
+        }   
+        if ($element < 0){
+            if ($nearZero < $element){
+                echo "coucou";
+                $nearZero = $element;
+            }
+        }
+    }
+
+    return $nearZero;
 }
 
-// TODO: Ajouter les fonctions manquantes
 ?>
