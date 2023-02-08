@@ -27,19 +27,11 @@ function trouver_max($tableau) {
 
 // Fonction pour trouver la valeur la plus proche de zéro
 function trouver_plus_proche_de_zero($tableau) {
-    $nearZero = $tableau[0];//7
+    $nearZero = $tableau[0];
     echo "coucou";
     foreach ($tableau as $element) {
-        if ($element >= 0){
-            if ($nearZero > $element) {
-                $nearZero = $element;
-            }
-        }   
-        if ($element < 0){
-            if ($nearZero < $element){
-                echo "coucou";
-                $nearZero = $element;
-            }
+        if (abs($nearZero) > abs($element)) {
+            $nearZero = $element;
         }
     }
 
